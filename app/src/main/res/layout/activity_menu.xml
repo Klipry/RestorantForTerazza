@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineMenu.MenuActivity"
+    android:background="@color/BackGround">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/uplogo" />
+
+    <ImageView
+        android:id="@+id/imageViewShaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/shaslik" />
+
+    <ImageView
+        android:id="@+id/imageViewRibai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewShaslik"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ribai" />
+
+    <ImageView
+        android:id="@+id/imageViewKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewShaslik"
+        app:srcCompat="@drawable/kitchen" />
+
+    <ImageView
+        android:id="@+id/imageViewFormadjio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKitchen"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRibai"
+        app:srcCompat="@drawable/formadjo" />
+
+    <ImageView
+        android:id="@+id/imageViewKolbaski"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKitchen"
+        app:srcCompat="@drawable/kolbaski" />
+
+    <ImageView
+        android:id="@+id/imageViewSemga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKolbaski"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFormadjio"
+        app:srcCompat="@drawable/semga" />
+
+    <TextView
+        android:id="@+id/textViewShaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Шашлык из курицы"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewShaslik"
+        app:layout_constraintStart_toStartOf="@+id/imageViewShaslik"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewShaslik" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стейк Рибай"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRibai"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRibai"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRibai" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Половинка цыплёнка"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKitchen"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKitchen"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKitchen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Формаджио Ди  Поло"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFormadjio"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFormadjio"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFormadjio" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Колбаски из оленины"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKolbaski"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKolbaski"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKolbaski" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стейк из сёмги с \n овощами пар/гриль"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSemga"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSemga"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSemga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

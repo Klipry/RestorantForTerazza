@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "304076055202",
+    "project_id": "terazzacaffe-69244",
+    "storage_bucket": "terazzacaffe-69244.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304076055202:android:67a8a36116e18796856dfb",
+        "android_client_info": {
+          "package_name": "com.example.restorantforterazza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304076055202-pqkso00l4h504b4c6cd3ru63028vnlg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restorantforterazza",
+            "certificate_hash": "301165156fd834e523f2831ae5e58d7bb6a3b386"
+          }
+        },
+        {
+          "client_id": "304076055202-iu2onq6070fmfnp9hmc38f36gp0bgf0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArAYP-n4_GJdARbUkP0ZrrK1lAEa0Gx2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304076055202-iu2onq6070fmfnp9hmc38f36gp0bgf0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

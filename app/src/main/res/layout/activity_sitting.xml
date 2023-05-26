@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineSitting.SittingActivity"
+    android:background="@color/BackGround">
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uplogo"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView31"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/recsetting" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="@+id/imageView33"
+        app:layout_constraintTop_toTopOf="@+id/imageView33">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ввод текста Для ввода различной информации предназначена экранная клавиатура. Для ее активации, как правило, достаточно нажать на поле ввода, куда требуется ввести информацию. Кнопка Готово (Далее, Ввод и т. д.) приводит к переходу между полями ввода без закрытия клавиатуры.   2.Местоположение на карте В мобильном приложении может быть предусмотрена возможность работы с картографическим сервисом Google Maps (отображение адреса). В настройках телефона должна быть включена служба геопозиционирования. Установка Google Maps в виде отдельного приложения не требуется. 3. Сообщения пользователю Сообщения пользователю отображаются в специальной панели. Эта панель отображается на экране только в тот момент, когда в ней есть сообщения. Если панель закрывается, то список сообщений очищается. Нажатие на сообщение приводит к активации элемента формы, если сообщение связано с таковым. Для повторного открытия списка сообщений следует повторно вызвать действие, приводящее к открытию списка. 4. Интерфейс системы Интерфейс мобильной платформы "
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

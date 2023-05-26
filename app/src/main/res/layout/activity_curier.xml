@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineMenu.CurierActivity"
+    android:background="@color/BackGround">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uplogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Вбейте время доставки и адрес"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextTextAdress"
+        android:layout_width="288dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Адрес"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTexNumberHome"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="номер дома"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextNumberEntrance"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAdress" />
+
+    <EditText
+        android:id="@+id/editTextTextFloor"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Этаж"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextNumberEntrance"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTexNumberHome" />
+
+    <EditText
+        android:id="@+id/editTextTextData"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Дата"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextNumberEntrance"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextFloor" />
+
+    <EditText
+        android:id="@+id/editTextTextNumberEntrance"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="номер подъезда"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAdress" />
+
+    <EditText
+        android:id="@+id/editTextTextFlat"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Номер кв"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNumberEntrance" />
+
+    <EditText
+        android:id="@+id/editTextTextTime"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Время"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextFlat" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите способ оплаты"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextData" />
+
+    <Button
+        android:id="@+id/buttonCard"
+        android:layout_width="139dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/GreenButton"
+        android:text="Карта"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/buttonMoney"
+        android:layout_width="139dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/GreenButton"
+        android:text="Наличные"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/buttonCard"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

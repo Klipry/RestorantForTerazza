@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:paddingTop="18dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:layout_gravity="center_horizontal"
+    app:layout_goneMarginTop="20dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="22dp"
+    android:background="@color/Rectangle"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+       android:background="@color/Rectangle"
+        >
+
+        <TextView
+            android:id="@+id/TextHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:width="327dp"
+
+
+            android:height="166dp"
+            android:text="Cделай заказ и получишь историю"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

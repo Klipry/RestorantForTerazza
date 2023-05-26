@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMainActivity"
+    android:background="@color/BackGround">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/uplogo"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageOtzivi"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Меню"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
+        app:layout_constraintEnd_toEndOf="@+id/imageMenu"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu"
+        app:layout_constraintTop_toTopOf="@+id/imageMenu" />
+
+    <ImageView
+        android:id="@+id/imageOtzivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        app:srcCompat="@drawable/otziv" />
+
+    <ImageView
+        android:id="@+id/imageViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNews"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMenu"
+        app:srcCompat="@drawable/historyzakaz" />
+
+    <ImageView
+        android:id="@+id/imageViewNews"
+        android:layout_width="154dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageOtzivi"
+        app:srcCompat="@drawable/news" />
+
+    <ImageView
+        android:id="@+id/imageViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSetting"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHistory"
+        app:srcCompat="@drawable/instructions" />
+
+    <ImageView
+        android:id="@+id/imageViewSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNews"
+        app:srcCompat="@drawable/sitting" />
+
+    <TextView
+        android:id="@+id/textViewOtzivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отзывы"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOtzivi"
+        app:layout_constraintEnd_toEndOf="@+id/imageOtzivi"
+        app:layout_constraintStart_toStartOf="@+id/imageOtzivi"
+        app:layout_constraintTop_toTopOf="@+id/imageOtzivi" />
+
+    <TextView
+        android:id="@+id/textViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="История\nзаказов"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewHistory"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewHistory"
+        app:layout_constraintStart_toStartOf="@+id/imageViewHistory"
+        app:layout_constraintTop_toTopOf="@+id/imageViewHistory" />
+
+    <TextView
+        android:id="@+id/textViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новости"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNews"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNews"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNews"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNews" />
+
+    <TextView
+        android:id="@+id/textViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Инструкция"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewInstruction"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewInstruction"
+        app:layout_constraintStart_toStartOf="@+id/imageViewInstruction"
+        app:layout_constraintTop_toTopOf="@+id/imageViewInstruction" />
+
+    <TextView
+        android:id="@+id/textViewSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSetting"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSetting"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSetting"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSetting"
+        app:layout_constraintVertical_bias="0.556" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

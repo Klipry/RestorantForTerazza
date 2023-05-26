@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestorantForTerazza"
+        tools:targetApi="31">
+        <activity
+            android:name=".LineSitting.Bron"
+            android:exported="false" />
+        <activity
+            android:name=".LineSittingReally.SittingReally"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.ThanksForBuy"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.Ibuyer"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.CurierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".basket"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.Semga.SemgaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.Kolbaski.KolbaskiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.Formadjio.FormajioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.Kitchen.KitchenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.ribai.RibaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.shaslik.ShashlikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineSitting.SittingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineNews.NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineHistory.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineOtziv.OtzivActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LineMenu.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegCode"
+            android:exported="false" />
+        <activity
+            android:name=".UserMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

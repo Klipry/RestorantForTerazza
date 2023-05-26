@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineMenu.Semga.SemgaActivity"
+    android:background="@color/BackGround">
+
+    <TextView
+        android:id="@+id/textViewBolgPerec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/minusBalgPerec"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBrokoli" />
+
+    <TextView
+        android:id="@+id/textViewBoklajani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/plusItem1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBolgPerec" />
+
+    <Button
+        android:id="@+id/plusBrokoli"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBrokoli"
+        app:layout_constraintTop_toBottomOf="@+id/plusCapust" />
+
+    <Button
+        android:id="@+id/plusBolgPerec"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBolgPerec"
+        app:layout_constraintTop_toBottomOf="@+id/plusBrokoli" />
+
+    <Button
+        android:id="@+id/plusBoklajani"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBoklajani"
+        app:layout_constraintTop_toBottomOf="@+id/plusBolgPerec" />
+
+    <Button
+        android:id="@+id/plusCapust"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCapust"
+        app:layout_constraintTop_toBottomOf="@+id/plusSpardja" />
+
+    <TextView
+        android:id="@+id/textViewCapust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/minusCapust"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpardja" />
+
+    <TextView
+        android:id="@+id/textViewBrokoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/minusBrokoli"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCapust" />
+
+    <Button
+        android:id="@+id/minusCapust"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusSpardja" />
+
+    <Button
+        android:id="@+id/minusBrokoli"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusCapust" />
+
+    <Button
+        android:id="@+id/minusBalgPerec"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusBrokoli" />
+
+    <Button
+        android:id="@+id/plusItem1"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusBalgPerec" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uplogo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textViewSemgaBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Стейк из сёмги с овощами пар/гриль"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSemgaBuy"
+        app:srcCompat="@drawable/semgabuy" />
+
+    <TextView
+        android:id="@+id/textViewSpardjaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:text="Спаржа"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textViewCapiustText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:text="Цветная капуста"
+        android:textColor="#000000"
+        android:textSize="16.sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpardjaText" />
+
+    <TextView
+        android:id="@+id/textViewBrokoliText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:text="Брокколи"
+        android:textColor="#000000"
+        android:textSize="16.sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCapiustText" />
+
+    <TextView
+        android:id="@+id/textViewBoldgPerecText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:text="Болгарский перец"
+        android:textColor="#000000"
+        android:textSize="16.sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBrokoliText" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:text="Баклажан"
+        android:textColor="#000000"
+        android:textSize="16.sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBoldgPerecText"/>
+
+    <Button
+        android:id="@+id/minusSpardja"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/plusSpardja"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSpardja"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textViewSpardja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/minusSpardja"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/GreenButton"
+        android:text="Перейти в корзину"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

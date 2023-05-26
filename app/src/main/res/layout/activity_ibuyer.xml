@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineMenu.Ibuyer"
+    android:background="@color/BackGround">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uplogo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:text="Выбирите время доставки"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/editTextTextDateCur"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="77dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Дата"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextTextTimeCur"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="77dp"
+        android:background="@color/ButtonBackGround_log_password"
+        android:ems="10"
+        android:hint="Время"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Выбирите способ оплаты"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextDateCur" />
+
+    <Button
+        android:id="@+id/buttonCardCur"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="карта"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:background="@color/GreenButton"/>
+
+    <Button
+        android:id="@+id/buttonNalCur"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="наличные"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:background="@color/GreenButton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
